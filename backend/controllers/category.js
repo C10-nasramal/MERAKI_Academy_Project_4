@@ -38,11 +38,11 @@ const createCategory = (req, res) => {
   const updateCategoryBYiD = (req,res)=>{
     const id = req.params.id
     const body = req.body
-    categoryModel.findByIdAndUpdate({_id: id},req.body,{new:true}) 
+    categoryModel.findByIdAndUpdate({_id: id},body,{new:true}) 
        .then((result)=>{res.status(202).json({
       success: true,
       category: result,
-      massage: " Upded Category"
+      massage: " Updated Category"
   })})
   .catch((err)=>{
     res.status(500).json({

@@ -3,7 +3,7 @@ const {createCategory,getAllcategory,updateCategoryBYiD} = require("../controlle
 const categoryRouter = express.Router();
 categoryRouter.post("/",createCategory)
 categoryRouter.get("/",getAllcategory)
-categoryRouter.put(":id",updateCategoryBYiD)
+categoryRouter.put("/update/:id",updateCategoryBYiD)
 
 module.exports = categoryRouter
 
