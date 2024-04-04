@@ -89,8 +89,22 @@ const deleteProdectById = (req,res)=>{
   
     })
 }
+const getAllProdect =(req,res)=>{
+    prodectModel.find([]).then((result)=>{res.status(200).json({
+        success: true,
+        prodect: result,
+        massage: `Prodects`
+    })})
+    .catch((err)=>{
+      res.status(500).json({
+                  success: false,
+                  massage: "server error",
+                  err: err.massage
+                   })
 
+    })
+}
 
 module.exports={
-    creatProdect,getProdectById,getProdectByCatogoryId,updateProdectById,deleteProdectById
+    creatProdect,getProdectById,getProdectByCatogoryId,updateProdectById,deleteProdectById,getAllProdect
 }
