@@ -5,6 +5,7 @@ import  { useEffect, useState,createContext } from 'react'
 import Register from './components/Register';
 import Login from './components/Login';
 import Home from './components/Home';
+import Prodect from './components/Prodect';
 export const UserContext = createContext();
 const App = () => {
   const [token, setToken] = useState(localStorage.getItem("token")|| "")
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/home' element={<Home/>} />
+        <Route path='/prodect' element={<Prodect/>}/>
       </Routes>
       </UserContext.Provider>
     </div>

@@ -10,9 +10,10 @@ const [password, setPassword] = useState("")
 const abbUser = ()=>{
     const body = {firstName,lastName,email,password}
     axios.post("http://localhost:5001/users/register",body).then((result)=>{
+        console.log(result.data);
         setMessage(result.data.message)
     }).catch((err)=>{
-        console.log(err.response.data);
+        console.log(err);
         setMessage(err.response.data.message)
     })
 }

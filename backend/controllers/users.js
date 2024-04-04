@@ -2,13 +2,13 @@ const usersModel = require("../models/users");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const register = (req, res) => {
-    const { firstName, lastName,  email, password, role } = req.body;
+    const { firstName, lastName,  email, password } = req.body;
     const user = new usersModel({
       firstName,
       lastName,
       email,
       password,
-      role,
+      role : "660c47bc7d6eda98971d775a"
     });
   
     user
