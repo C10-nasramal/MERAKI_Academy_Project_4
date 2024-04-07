@@ -38,6 +38,7 @@ setPassword(e.target.value)
 <button onClick={()=>{
    toLog()
 }}>Login</button>
+{message&& <h1 className={sucess ?"success": "failes"}>{message}</h1>}
     </div>
   )
 }

@@ -8,7 +8,7 @@ const [prodects, setProdects] = useState("")
   useEffect(()=>{
     axios.get("http://localhost:5001/prodect").then((result)=>{
       console.log(result.data);
-      setProdects(result.data)
+      setProdects(result.data.prodect)
       setMessage(result.data.message)
   }).catch((err)=>{
       console.log(err);
@@ -17,7 +17,14 @@ const [prodects, setProdects] = useState("")
   },[])
   return (
     <div className='Home'>
-
+      {prodects&& prodects.map((elem,i)=>{
+              return  <div>
+                <img src={elem.img}/>
+                <p>{elem.title}</p>
+                <p>{elem.description}</p>
+                <p>{elem.price}</p>
+              </div>
+            })}
     </div>
   )
 }

@@ -90,7 +90,7 @@ const deleteProdectById = (req,res)=>{
     })
 }
 const getAllProdect =(req,res)=>{
-    prodectModel.find([]).then((result)=>{res.status(200).json({
+    prodectModel.find({}).then((result)=>{res.status(200).json({
         success: true,
         prodect: result,
         massage: `Prodects`

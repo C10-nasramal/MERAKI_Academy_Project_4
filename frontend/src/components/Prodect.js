@@ -1,8 +1,13 @@
 import React from 'react'
 import  { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from "react-router-dom";
+
 const Prodect = () => {
+    const navigate = useNavigate()
+
     const [catogoey, setCatogoey] = useState("")
+    const [catId, setCatId] = useState("")
 
     const [message,setMessage] = useState("");
     const [title, setTitle] = useState("")
@@ -10,8 +15,9 @@ const Prodect = () => {
     const [img, setImg] = useState("")
     const [url, setUrl] = useState("")
     const [price, setPrice] = useState("")
+    console.log(catId);
     const newProdect = ()=>{
-        const body = {title,description,img:url,price}
+        const body = {title,description,img:url,price,catogoey:catId}
        
         axios.post("http://localhost:5001/prodect",body).then((result)=>{
             console.log(result.data);
@@ -63,10 +69,11 @@ const Prodect = () => {
         <input type='text' placeholder='Description' onChange={(e)=>{setDescription(e.target.value)}}/>
         <input type='string' placeholder='Price' onChange={(e)=>{setPrice(e.target.value)}}/>
 
-        <select>
+        <select onChange={(e)=>{setCatId(e.target.value)}}>
         <option value="Select">Select category</option>
         {catogoey && catogoey.map((elem,i)=>{
-              return  <option value="Catogoey">{elem.title}</option>
+            
+              return  <option value ={elem._id} >{elem.title}</option>
             })
         }
             
@@ -78,6 +85,7 @@ const Prodect = () => {
 <button onClick={uploadImage}>Upload Image</button>
         <button onClick={()=>{
             newProdect()
+            navigate("/home")
         }}>New Prodect </button>
     </div>
   )
