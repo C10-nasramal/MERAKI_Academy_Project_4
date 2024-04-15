@@ -1,6 +1,7 @@
 .Register{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    margin: 117px 88px 8px 88px;
     
 }
 .input{
@@ -13,14 +14,15 @@
   background-color: #ddd;
   outline: none;
 }
-.button{
+.SignUpbutton{
     background-color: #04AA6D;
   color: white;
-  padding: 14px 20px;
+  
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+
   opacity: 0.9;
 }
 @media screen and (max-width: 300px) {

@@ -56,7 +56,7 @@ const Register = () => {
           setPassword(e.target.value);
         }}
       />
-      <button className="button"
+      <button className="SignUpbutton"
         onClick={() => {
           abbUser();
           navigate("/login");

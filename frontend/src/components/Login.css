@@ -3,7 +3,8 @@
     font-family: Arial, Helvetica, sans-serif;
     border: 3px solid #f1f1f1;
     margin-top: 104px;
-    
+    margin: 117px 88px 8px 88px;
+
 }
 .input{
     width: 100%;
@@ -13,7 +14,7 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-.button{
+.Loginbutton{
     background-color: #04AA6D;
   color: white;
   padding: 12px 20px;

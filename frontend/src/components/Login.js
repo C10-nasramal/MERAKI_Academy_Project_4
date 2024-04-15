@@ -49,7 +49,7 @@ const Login = () => {
           setPassword(e.target.value);
         }}
       />
-      <button className="button"
+      <button className="Loginbutton"
         onClick={() => {
           toLog();
           navigate("/home");

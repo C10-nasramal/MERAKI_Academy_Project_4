@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Logout.css"
 import { useContext } from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";

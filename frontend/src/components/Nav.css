@@ -3,26 +3,31 @@
     background-size: cover;
     font-family: sans-serif;
     background-color: white;
-    padding: 30px;
-    /* position: fixed; */
+    padding: 25px;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 23px;
+    height: 20px;
     display: flex;
     align-items: center;
     box-shadow: 0 0 10px 0 rgba(133, 131, 131, 0.185);
     
 }
+.log{
+  margin: 15px 20px -6px 70px;
+  font-size: 15px;
+  padding: 8px 18px;
+}
 
 
-
-.button{
+.Navbutton{
   
   font-size: 15px;
-  padding: 7px 11px;
+  padding: 8px 30px;
     display: inline;
-    margin: 20px;
+    margin: 1px -4px -6px 17px;
+
     color: black;
     text-decoration: none;
 }
@@ -31,6 +36,8 @@
     color: black;
   }
   h1{
+    margin: 14px -4px -6px 17px;
+
     font-family: sans-serif;
     font-size: 20px;
     margin: 1px;

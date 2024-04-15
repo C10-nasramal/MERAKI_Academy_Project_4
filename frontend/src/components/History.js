@@ -1,4 +1,5 @@
 import React from "react";
+import "./History.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -55,7 +56,7 @@ const History = () => {
     getRequests();
   }, []);
   return (
-    <div>
+    <div className="History">
       <p>Exchange History</p>
       <div>
         <p>Exchange Requests</p>
