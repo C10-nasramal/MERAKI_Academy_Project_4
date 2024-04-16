@@ -75,21 +75,21 @@ const Prodect = () => {
 
   return (
     <div className="Prodect">
-      <input
+      <input className="input"
         type="text"
         placeholder="Title"
         onChange={(e) => {
           setTitle(e.target.value);
         }}
       />
-      <input
+      <input className="input"
         type="text"
         placeholder="Description"
         onChange={(e) => {
           setDescription(e.target.value);
         }}
       />
-      <input
+      <input className="input"
         type="string"
         placeholder="Price"
         onChange={(e) => {
@@ -97,7 +97,7 @@ const Prodect = () => {
         }}
       />
 
-      <select
+      <select className="input"
         onChange={(e) => {
           setCatId(e.target.value);
         }}
@@ -109,9 +109,9 @@ const Prodect = () => {
           })}
       </select>
 
-      <input type="file" onChange={(e) => setImg(e.target.files[0])}></input>
-      <button onClick={uploadImage}>Upload Image</button>
-      <button
+      <input className="input" type="file" onChange={(e) => setImg(e.target.files[0])}></input>
+      <button className="uploadImage" onClick={uploadImage}>Upload Image</button>
+      <button className="probutton"
         onClick={() => {
           newProdect();
           navigate("/home");

@@ -58,7 +58,7 @@ const History = () => {
   return (
     <div className="History">
       <p>Exchange History</p>
-      <div>
+      <div className="Exchange ">
         <p>Exchange Requests</p>
         {requests.length > 0 ? (
           requests.map((elem, i) => {
@@ -165,7 +165,7 @@ const History = () => {
           <p>No Requests</p>
         )}
       </div>
-      <div>
+      <div className="MyOffers">
         <p>My Offers</p>
         {offers.length > 0 ? (
           offers.map((elem, i) => {

@@ -1,0 +1,42 @@
+.Prodect{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 117px 88px 8px 88px;
+}
+.input{
+    width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  background-color: #ddd;
+  outline: none;
+}
+.probutton{
+    background-color: #04AA6D;
+    color: white;
+    
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 51%;
+  
+    opacity: 0.9
+}
+.uploadImage{
+    background-color: #04AA6D;
+    color: white;
+    
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 51%;
+  
+    opacity: 0.9
+}
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }

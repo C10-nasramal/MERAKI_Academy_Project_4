@@ -3,3 +3,28 @@
     grid-template-columns:  1fr 1fr ;
 
 }
+
+.imgprodact  {
+    width: 272px;
+    height:  241px;
+    cursor: pointer;
+    margin-top: 1px;
+   
+ }
+
+ .titlePage{
+    font-style: oblique;
+    margin-top:14px;
+    font-size: 22px;
+}
+
+.pricePage{
+    font-style: oblique;
+    margin-top:10px;
+    font-size: 22px;
+}
+.description{
+    
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}

@@ -62,11 +62,11 @@ const Order = () => {
       <div>
         <div key={order._id}>
           <div>
-            <p>The Item you selected to Exchange with:</p>
-            <img src={order.img} />
-            <p>{order.title}</p>
-            <p>{order.description}</p>
-            <p>{order.price}</p>
+            <p >The Item you selected to Exchange with:</p>
+            <img className="imgprodact" src={order.img} />
+            <p className="titlePage">{order.title}</p>
+            <p className="description">{order.description}</p>
+            <p className="pricePage">{order.price}</p>
             <button onClick={()=>{
               navigate("/home")
             }}>Cancel Exchange</button>
@@ -81,10 +81,10 @@ const Order = () => {
             return (
               <div key={i}>
                 <div>
-                  <img src={elem.img} />
-                  <p>{elem.title}</p>
-                  <p>{elem.description}</p>
-                  <p>{elem.price}</p>
+                <img className="imgprodact" src={elem.img} />
+              <p className="titlePage">Title: {elem.title}</p>
+              <p className="description">Description: {elem.description}</p>
+              <p className="pricePage">{elem.price} $</p>
                   <button
                     onClick={() => {
                       const body = {

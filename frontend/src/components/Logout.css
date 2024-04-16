@@ -1,0 +1,14 @@
+.Logout {
+    text-align: center;
+    margin: 146px;
+    font-size: 27px;
+    color: green;
+    
+}
+.LogoutButton{
+    font-size: 18px;
+    margin: 8px 2px;
+    cursor: pointer;
+    width: 20%;
+    height: 50%;
+}

@@ -12,9 +12,9 @@ const Logout = () => {
     localStorage.removeItem("token")
     setToken(null)
   return (
-    <div>
+    <div className='Logout '>
       <p>Logged Out succesfully</p>
-      <button onClick={()=>{navigate(`/home`)}}>Back to Home</button>
+      <button className="LogoutButton"onClick={()=>{navigate(`/home`)}}>Back to Home</button>
     </div>
   )
 }
